@@ -1,3 +1,4 @@
+
 -- ******************************************************
 -- 1. INSERTS para Rochoa.especialidades (100 Registros Reales)
 -- ******************************************************
@@ -209,3 +210,463 @@ INSERT INTO Rochoa.pacientes (id_paciente, identificacion, nombres, apellidos, f
 (98, '0900000098', 'Xavier', 'Castro Flores', '1968-04-22', 'M', '0990000098', 'x.castro.f@mail.com', 'Vía a Jaramijó, Portoviejo'),
 (99, '0900000099', 'Zoe', 'López García', '1981-05-29', 'F', '0990000099', 'z.lopez.g@mail.com', 'El Condado, Quito'),
 (100, '0900000100', 'Raúl', 'Martínez Soto', '2000-06-05', 'M', '0990000100', 'r.martinez.s@mail.com', 'Ciudad del Sol, Machala');
+
+
+
+-- ******************************************************
+-- 3. INSERTS para Rochoa.medicos (100 Registros)
+-- ******************************************************
+INSERT INTO Rochoa.medicos
+(id_especialidad, identificacion, nombres, apellidos, telefono, email, activo)
+VALUES
+(1,'MED0001','Juan','Pérez','0991000001','medico01@hospital.com',TRUE),
+(2,'MED0002','María','Gómez','0991000002','medico02@hospital.com',TRUE),
+(3,'MED0003','Carlos','López','0991000003','medico03@hospital.com',TRUE),
+(4,'MED0004','Ana','Martínez','0991000004','medico04@hospital.com',TRUE),
+(5,'MED0005','Luis','Rodríguez','0991000005','medico05@hospital.com',TRUE),
+(6,'MED0006','Sofía','Fernández','0991000006','medico06@hospital.com',TRUE),
+(7,'MED0007','Pedro','Sánchez','0991000007','medico07@hospital.com',TRUE),
+(8,'MED0008','Lucía','Ramírez','0991000008','medico08@hospital.com',TRUE),
+(9,'MED0009','Jorge','Torres','0991000009','medico09@hospital.com',TRUE),
+(10,'MED0010','Valeria','Flores','0991000010','medico10@hospital.com',TRUE),
+
+(11,'MED0011','Ricardo','Vargas','0991000011','medico11@hospital.com',TRUE),
+(12,'MED0012','Paula','Ríos','0991000012','medico12@hospital.com',TRUE),
+(13,'MED0013','Andrés','Mendoza','0991000013','medico13@hospital.com',TRUE),
+(14,'MED0014','Natalia','Castro','0991000014','medico14@hospital.com',TRUE),
+(15,'MED0015','Fernando','Ortiz','0991000015','medico15@hospital.com',TRUE),
+(16,'MED0016','Camila','Silva','0991000016','medico16@hospital.com',TRUE),
+(17,'MED0017','Diego','Morales','0991000017','medico17@hospital.com',TRUE),
+(18,'MED0018','Daniela','Herrera','0991000018','medico18@hospital.com',TRUE),
+(19,'MED0019','Hugo','Paredes','0991000019','medico19@hospital.com',TRUE),
+(20,'MED0020','Laura','Cruz','0991000020','medico20@hospital.com',TRUE),
+
+(21,'MED0021','Miguel','Reyes','0991000021','medico21@hospital.com',TRUE),
+(22,'MED0022','Andrea','León','0991000022','medico22@hospital.com',TRUE),
+(23,'MED0023','Esteban','Guerrero','0991000023','medico23@hospital.com',TRUE),
+(24,'MED0024','Carolina','Navarro','0991000024','medico24@hospital.com',TRUE),
+(25,'MED0025','Raúl','Peña','0991000025','medico25@hospital.com',TRUE),
+(26,'MED0026','Verónica','Campos','0991000026','medico26@hospital.com',TRUE),
+(27,'MED0027','Óscar','Delgado','0991000027','medico27@hospital.com',TRUE),
+(28,'MED0028','Patricia','Acosta','0991000028','medico28@hospital.com',TRUE),
+(29,'MED0029','Iván','Medina','0991000029','medico29@hospital.com',TRUE),
+(30,'MED0030','Elena','Suárez','0991000030','medico30@hospital.com',TRUE),
+
+(31,'MED0031','Alberto','Ramos','0991000031','medico31@hospital.com',TRUE),
+(32,'MED0032','Mónica','Cabrera','0991000032','medico32@hospital.com',TRUE),
+(33,'MED0033','Francisco','Vega','0991000033','medico33@hospital.com',TRUE),
+(34,'MED0034','Gabriela','Núñez','0991000034','medico34@hospital.com',TRUE),
+(35,'MED0035','Sergio','Aguilar','0991000035','medico35@hospital.com',TRUE),
+(36,'MED0036','Lorena','Ibarra','0991000036','medico36@hospital.com',TRUE),
+(37,'MED0037','Roberto','Cárdenas','0991000037','medico37@hospital.com',TRUE),
+(38,'MED0038','Diana','Valencia','0991000038','medico38@hospital.com',TRUE),
+(39,'MED0039','Mauricio','Espinoza','0991000039','medico39@hospital.com',TRUE),
+(40,'MED0040','Alejandra','Serrano','0991000040','medico40@hospital.com',TRUE),
+
+(41,'MED0041','Guillermo','Mejía','0991000041','medico41@hospital.com',TRUE),
+(42,'MED0042','Silvia','Lara','0991000042','medico42@hospital.com',TRUE),
+(43,'MED0043','Cristian','Pinto','0991000043','medico43@hospital.com',TRUE),
+(44,'MED0044','Noemí','Fajardo','0991000044','medico44@hospital.com',TRUE),
+(45,'MED0045','Álvaro','Roldán','0991000045','medico45@hospital.com',TRUE),
+(46,'MED0046','Beatriz','Salinas','0991000046','medico46@hospital.com',TRUE),
+(47,'MED0047','Javier','Coronel','0991000047','medico47@hospital.com',TRUE),
+(48,'MED0048','Rocío','Lemos','0991000048','medico48@hospital.com',TRUE),
+(49,'MED0049','Pablo','Mora','0991000049','medico49@hospital.com',TRUE),
+(50,'MED0050','Cecilia','Arévalo','0991000050','medico50@hospital.com',TRUE),
+
+(51,'MED0051','Tomás','Barrera','0991000051','medico51@hospital.com',TRUE),
+(52,'MED0052','Nadia','Quiroga','0991000052','medico52@hospital.com',TRUE),
+(53,'MED0053','Emilio','Sandoval','0991000053','medico53@hospital.com',TRUE),
+(54,'MED0054','Karen','Londoño','0991000054','medico54@hospital.com',TRUE),
+(55,'MED0055','Felipe','Cortés','0991000055','medico55@hospital.com',TRUE),
+(56,'MED0056','Juliana','Zúñiga','0991000056','medico56@hospital.com',TRUE),
+(57,'MED0057','Rodrigo','Palacios','0991000057','medico57@hospital.com',TRUE),
+(58,'MED0058','Marisol','Tapia','0991000058','medico58@hospital.com',TRUE),
+(59,'MED0059','René','Montoya','0991000059','medico59@hospital.com',TRUE),
+(60,'MED0060','Elsa','Bermúdez','0991000060','medico60@hospital.com',TRUE),
+
+(61,'MED0061','Víctor','Carrillo','0991000061','medico61@hospital.com',TRUE),
+(62,'MED0062','Irene','Bustillos','0991000062','medico62@hospital.com',TRUE),
+(63,'MED0063','Samuel','Urbina','0991000063','medico63@hospital.com',TRUE),
+(64,'MED0064','Paola','Villamar','0991000064','medico64@hospital.com',TRUE),
+(65,'MED0065','Hernán','Bravo','0991000065','medico65@hospital.com',TRUE),
+(66,'MED0066','Yolanda','Patiño','0991000066','medico66@hospital.com',TRUE),
+(67,'MED0067','Nicolás','Santana','0991000067','medico67@hospital.com',TRUE),
+(68,'MED0068','Liliana','Ocampo','0991000068','medico68@hospital.com',TRUE),
+(69,'MED0069','Marcos','Gaitán','0991000069','medico69@hospital.com',TRUE),
+(70,'MED0070','Adriana','Quintero','0991000070','medico70@hospital.com',TRUE),
+
+(71,'MED0071','Kevin','Cifuentes','0991000071','medico71@hospital.com',TRUE),
+(72,'MED0072','Ruth','Benavides','0991000072','medico72@hospital.com',TRUE),
+(73,'MED0073','Sebastián','Ojeda','0991000073','medico73@hospital.com',TRUE),
+(74,'MED0074','Fabiola','Peralta','0991000074','medico74@hospital.com',TRUE),
+(75,'MED0075','Alex','Rosero','0991000075','medico75@hospital.com',TRUE),
+(76,'MED0076','Miriam','Lucero','0991000076','medico76@hospital.com',TRUE),
+(77,'MED0077','Wilson','Alarcón','0991000077','medico77@hospital.com',TRUE),
+(78,'MED0078','Denisse','Guamán','0991000078','medico78@hospital.com',TRUE),
+(79,'MED0079','Cristóbal','Pacheco','0991000079','medico79@hospital.com',TRUE),
+(80,'MED0080','Tatiana','Moya','0991000080','medico80@hospital.com',TRUE),
+
+(81,'MED0081','Leonardo','Rivadeneira','0991000081','medico81@hospital.com',TRUE),
+(82,'MED0082','Karla','Villalba','0991000082','medico82@hospital.com',TRUE),
+(83,'MED0083','Fabián','Ordóñez','0991000083','medico83@hospital.com',TRUE),
+(84,'MED0084','Gloria','Chávez','0991000084','medico84@hospital.com',TRUE),
+(85,'MED0085','Edison','Loor','0991000085','medico85@hospital.com',TRUE),
+(86,'MED0086','Patricio','Delgado','0991000086','medico86@hospital.com',TRUE),
+(87,'MED0087','Vanessa','Coral','0991000087','medico87@hospital.com',TRUE),
+(88,'MED0088','Henry','Gavilánez','0991000088','medico88@hospital.com',TRUE),
+(89,'MED0089','Jessica','Solórzano','0991000089','medico89@hospital.com',TRUE),
+(90,'MED0090','Mauricio','Bolaños','0991000090','medico90@hospital.com',TRUE),
+
+(91,'MED0091','Mario','Benítez','0991000091','medico91@hospital.com',TRUE),
+(92,'MED0092','Rosa','Arias','0991000092','medico92@hospital.com',TRUE),
+(93,'MED0093','Julio','Salazar','0991000093','medico93@hospital.com',TRUE),
+(94,'MED0094','Claudia','Correa','0991000094','medico94@hospital.com',TRUE),
+(95,'MED0095','Adrián','Figueroa','0991000095','medico95@hospital.com',TRUE),
+(96,'MED0096','Mónica','Zamora','0991000096','medico96@hospital.com',TRUE),
+(97,'MED0097','Bruno','Cordero','0991000097','medico97@hospital.com',TRUE),
+(98,'MED0098','Isabel','Ojeda','0991000098','medico98@hospital.com',TRUE),
+(99,'MED0099','Renato','Bustamante','0991000099','medico99@hospital.com',TRUE),
+(100,'MED0100','Lorena','Maldonado','0991000100','medico100@hospital.com',TRUE);
+
+
+
+
+
+-- ******************************************************
+-- 4. INSERTS para Rochoa.citas (100 Registros)
+-- Asignación cíclica de id_paciente y id_medico (1-100)
+-- ******************************************************
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (1, 1, 1, '2025-12-20', '10:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (2, 2, 2, '2025-12-18', '14:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (3, 3, 3, '2025-12-21', '09:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (4, 4, 4, '2025-12-19', '11:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (5, 5, 5, '2025-12-18', '16:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (6, 6, 6, '2025-12-20', '08:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (7, 7, 7, '2025-12-22', '15:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (8, 8, 8, '2025-12-16', '10:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (9, 9, 9, '2025-12-23', '11:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (10, 10, 10, '2025-12-17', '13:00:00', 'ATENDIDA');
+-- 90 registros adicionales con fechas futuras, pasadas y estados mixtos
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (11, 11, 11, '2026-01-05', '09:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (12, 12, 12, '2025-11-25', '11:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (13, 13, 13, '2026-02-10', '14:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (14, 14, 14, '2025-12-24', '17:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (15, 15, 15, '2025-11-01', '08:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (16, 16, 16, '2026-03-01', '10:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (17, 17, 17, '2025-10-15', '12:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (18, 18, 18, '2026-04-05', '15:30:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (19, 19, 19, '2025-12-26', '16:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (20, 20, 20, '2025-09-20', '09:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (21, 21, 21, '2026-01-15', '11:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (22, 22, 22, '2025-11-05', '13:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (23, 23, 23, '2026-02-20', '14:30:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (24, 24, 24, '2025-12-28', '10:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (25, 25, 25, '2025-10-01', '11:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (26, 26, 26, '2026-03-10', '15:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (27, 27, 27, '2025-09-10', '16:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (28, 28, 28, '2026-04-15', '08:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (29, 29, 29, '2025-12-30', '09:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (30, 30, 30, '2025-08-25', '12:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (31, 31, 31, '2026-01-20', '14:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (32, 32, 32, '2025-10-20', '15:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (33, 33, 33, '2026-02-25', '17:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (34, 34, 34, '2025-12-27', '08:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (35, 35, 35, '2025-09-05', '10:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (36, 36, 36, '2026-03-20', '11:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (37, 37, 37, '2025-08-10', '13:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (38, 38, 38, '2026-04-20', '15:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (39, 39, 39, '2026-01-01', '16:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (40, 40, 40, '2025-07-25', '09:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (41, 41, 41, '2026-01-25', '10:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (42, 42, 42, '2025-10-25', '11:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (43, 43, 43, '2026-03-01', '13:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (44, 44, 44, '2026-01-03', '14:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (45, 45, 45, '2025-09-25', '16:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (46, 46, 46, '2026-03-25', '08:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (47, 47, 47, '2025-08-20', '09:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (48, 48, 48, '2026-04-25', '10:30:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (49, 49, 49, '2026-01-05', '11:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (50, 50, 50, '2025-07-15', '12:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (51, 51, 51, '2026-01-30', '13:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (52, 52, 52, '2025-10-10', '14:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (53, 53, 53, '2026-03-05', '15:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (54, 54, 54, '2026-01-07', '16:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (55, 55, 55, '2025-09-10', '08:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (56, 56, 56, '2026-03-30', '10:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (57, 57, 57, '2025-08-05', '11:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (58, 58, 58, '2026-05-01', '12:30:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (59, 59, 59, '2026-01-10', '14:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (60, 60, 60, '2025-07-01', '15:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (61, 61, 61, '2026-02-05', '16:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (62, 62, 62, '2025-11-15', '09:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (63, 63, 63, '2026-03-10', '10:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (64, 64, 64, '2026-01-12', '11:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (65, 65, 65, '2025-10-05', '12:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (66, 66, 66, '2026-04-05', '13:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (67, 67, 67, '2025-09-01', '14:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (68, 68, 68, '2026-05-05', '15:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (69, 69, 69, '2026-01-15', '16:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (70, 70, 70, '2025-06-25', '08:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (71, 71, 71, '2026-02-10', '09:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (72, 72, 72, '2025-11-20', '10:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (73, 73, 73, '2026-03-15', '11:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (74, 74, 74, '2026-01-18', '12:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (75, 75, 75, '2025-09-20', '13:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (76, 76, 76, '2026-04-10', '14:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (77, 77, 77, '2025-08-15', '15:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (78, 78, 78, '2026-05-10', '16:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (79, 79, 79, '2026-01-20', '08:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (80, 80, 80, '2025-06-10', '09:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (81, 81, 81, '2026-02-15', '10:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (82, 82, 82, '2025-11-25', '11:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (83, 83, 83, '2026-03-20', '12:30:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (84, 84, 84, '2026-01-23', '13:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (85, 85, 85, '2025-09-15', '14:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (86, 86, 86, '2026-04-15', '15:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (87, 87, 87, '2025-08-01', '16:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (88, 88, 88, '2026-05-15', '08:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (89, 89, 89, '2026-01-25', '09:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (90, 90, 90, '2025-05-25', '10:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (91, 91, 91, '2026-02-20', '11:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (92, 92, 92, '2025-10-05', '12:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (93, 93, 93, '2026-03-25', '13:00:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (94, 94, 94, '2026-01-28', '14:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (95, 95, 95, '2025-09-01', '15:00:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (96, 96, 96, '2026-04-20', '16:00:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (97, 97, 97, '2025-07-20', '08:30:00', 'ATENDIDA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (98, 98, 98, '2026-05-20', '09:30:00', 'CANCELADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (99, 99, 99, '2026-01-30', '10:30:00', 'PROGRAMADA');
+INSERT INTO Rochoa.citas (id_cita, id_paciente, id_medico, fecha, hora, estado) VALUES (100, 100, 100, '2025-05-15', '11:30:00', 'ATENDIDA');
+
+-- ******************************************************
+-- 5. INSERTS para Rochoa.consultas 
+-- ******************************************************
+INSERT INTO Rochoa.consultas
+(id_consulta, id_cita, motivo_consulta, diagnostico, tratamiento, observaciones)
+VALUES
+(1,1,'Dolor de cabeza recurrente','Cefalea tensional','Analgésicos y descanso','Seguimiento psicológico.'),
+(2,2,'Chequeo general preventivo','Paciente sano','Dieta balanceada y ejercicio','Control en 6 meses.'),
+(3,3,'Dolor de rodilla','Artritis leve','Fisioterapia','Evitar impacto.'),
+(4,4,'Control prenatal inicial','Embarazo normal','Vitaminas prenatales','Nueva cita en 4 semanas.'),
+(5,5,'Manchas en la piel','Dermatitis atópica','Crema tópica','Evitar sol.'),
+
+(6,6,'Fiebre y tos','Resfriado común','Paracetamol','Regresar si empeora.'),
+(7,7,'Control visual','Miopía leve','Actualizar lentes','Control anual.'),
+(8,8,'Dolor lumbar','Lumbalgia mecánica','Reposo y analgésicos','Evaluar fisioterapia.'),
+(9,9,'Control presión arterial','Hipertensión controlada','Mantener medicación','Control diario.'),
+(10,10,'Fatiga constante','Anemia ferropénica','Hierro oral','Repetir exámenes.'),
+
+(11,11,'Lesión deportiva','Esguince grado I','Vendaje y reposo','10 días reposo.'),
+(12,12,'Insomnio','Insomnio transitorio','Higiene del sueño','Evitar cafeína.'),
+(13,13,'Dificultad respiratoria','Asma leve','Inhalador','Evitar polvo.'),
+(14,14,'Revisión de lunar','Nevus benigno','Observación','Control anual.'),
+(15,15,'Dolor abdominal','Gastritis','IBP','Reducir estrés.'),
+
+(16,16,'Chequeo pediátrico','Desarrollo normal','Vacunas completas','Control trimestral.'),
+(17,17,'Ardor al orinar','Infección urinaria','Antibiótico','Beber agua.'),
+(18,18,'Postoperatorio','Evolución favorable','Curaciones','Retiro de puntos.'),
+(19,19,'Control tiroides','Hipotiroidismo estable','Ajuste dosis','Control 2 meses.'),
+(20,20,'Dolor cervical','Contractura muscular','Relajantes','Ejercicios.'),
+
+(21,21,'Revisión ginecológica','Normal','Control anual','Hábitos saludables.'),
+(22,22,'Glucosa elevada','Diabetes tipo 2','Ajuste tratamiento','Control glicémico.'),
+(23,23,'Vértigo','VPPB','Maniobra de Epley','Evitar movimientos bruscos.'),
+(24,24,'Erupción cutánea','Alergia alimentaria','Antihistamínicos','Evitar alérgeno.'),
+(25,25,'Dolor dental','Caries profunda','Derivar odontología','Analgésico.'),
+
+(26,26,'Control cadera','Post quirúrgico estable','Fisioterapia','Marcha asistida.'),
+(27,27,'Tos persistente','Bronquitis crónica','Nebulizaciones','Evitar frío.'),
+(28,28,'Control nutricional','Obesidad grado I','Plan nutricional','Seguimiento.'),
+(29,29,'Dolor de oído','Otitis media','Antibiótico','No mojar oído.'),
+(30,30,'Control próstata','HPB leve','Tratamiento médico','Control anual.'),
+
+(31,31,'Rehabilitación','Post LCA','Fisioterapia','3 meses.'),
+(32,32,'Ansiedad','Trastorno de ansiedad','Psicoterapia','Evaluar medicación.'),
+(33,33,'Visión borrosa','Presbicia','Lentes lectura','Control anual.'),
+(34,34,'Quemadura solar','Dermatitis solar','Crema hidratante','Evitar sol.'),
+(35,35,'Control embarazo','Embarazo normal','Monitoreo fetal','Seguimiento.'),
+
+(36,36,'Control niño sano','Desarrollo adecuado','Estimulación','Vacunas.'),
+(37,37,'Dolor articular','Artrosis leve','Suplementos','Ejercicio suave.'),
+(38,38,'Dolor lumbar crónico','Hernia discal','Manejo conservador','Derivar neuro.'),
+(39,39,'Fatiga post viral','Síndrome fatiga','Reposo','Evaluar sueño.'),
+(40,40,'Chequeo general','Paciente sano','Prevención','Control anual.'),
+
+(41,41,'Palpitaciones','Ansiedad','Relajación','ECG.'),
+(42,42,'Dolor torácico','Costocondritis','Antiinflamatorios','Reposo.'),
+(43,43,'Caída de cabello','Alopecia','Minoxidil','Seguimiento dermato.'),
+(44,44,'Ojo rojo','Conjuntivitis','Gotas antibióticas','Higiene ocular.'),
+(45,45,'Estreñimiento','Tránsito lento','Fibra','Actividad física.'),
+
+(46,46,'Dolor hombro','Tendinitis','Fisioterapia','Reposo relativo.'),
+(47,47,'Dolor garganta','Faringitis viral','Sintomático','No antibiótico.'),
+(48,48,'Edema piernas','Insuficiencia venosa','Medias compresivas','Elevar piernas.'),
+(49,49,'Dolor menstrual','Dismenorrea','Analgésicos','Control ginecológico.'),
+(50,50,'Chequeo cardiaco','Normal','Seguimiento','ECG anual.'),
+
+(51,51,'Pérdida auditiva','Presbiacusia','Audífono','Evaluación ORL.'),
+(52,52,'Dolor testicular','Orquitis','Antibiótico','Reposo.'),
+(53,53,'Control post covid','Secuelas leves','Ejercicios respiratorios','Seguimiento.'),
+(54,54,'Dolor facial','Sinusitis','Antibiótico','Lavados nasales.'),
+(55,55,'Hipotiroidismo','Descompensado','Ajuste hormonal','Laboratorio.'),
+
+(56,56,'Control neurológico','Normal','Observación','Control anual.'),
+(57,57,'Dolor muñeca','Túnel carpiano','Férula','Electromiografía.'),
+(58,58,'Alteración del sueño','Terrores nocturnos','Higiene del sueño','Seguimiento.'),
+(59,59,'Pérdida de peso','Hipertiroidismo','Tratamiento','Control hormonal.'),
+(60,60,'Control geriátrico','Fragilidad leve','Suplementos','Ejercicio.'),
+
+(61,61,'Dolor talón','Fascitis plantar','Plantillas','Estiramientos.'),
+(62,62,'Control renal','Función estable','Hidratación','Control anual.'),
+(63,63,'Dolor lumbar embarazo','Sobrecarga','Ejercicios','Faja lumbar.'),
+(64,64,'Rinitis','Alergia estacional','Antihistamínicos','Evitar polvo.'),
+(65,65,'Desnutrición leve','Déficit nutricional','Plan nutricional','Seguimiento.'),
+
+(66,66,'Dolor abdominal niño','Parásitos','Antiparasitario','Higiene.'),
+(67,67,'Dolor mandibular','Bruxismo','Placa dental','Relajación.'),
+(68,68,'Control oncológico','Remisión','Seguimiento','Control semestral.'),
+(69,69,'Fatiga laboral','Estrés crónico','Psicoterapia','Reducir carga.'),
+(70,70,'Control vascular','Insuficiencia leve','Ejercicio','Seguimiento.'),
+
+(71,71,'Dolor al caminar','Claudicación','Evaluación vascular','Eco doppler.'),
+(72,72,'Control respiratorio','EPOC leve','Broncodilatador','Suspender tabaco.'),
+(73,73,'Lesión piel','Queratosis','Crioterapia','Control.'),
+(74,74,'Dolor cervical','Cervicalgia','Fisioterapia','Postura correcta.'),
+(75,75,'Control endocrino','Síndrome metabólico','Dieta','Seguimiento.'),
+
+(76,76,'Dolor post vacuna','Reacción local','Analgésico','Observación.'),
+(77,77,'Revisión visual','Catarata inicial','Observación','Control anual.'),
+(78,78,'Dolor epigástrico','Reflujo','IBP','Evitar grasas.'),
+(79,79,'Infección piel','Celulitis','Antibiótico','Control 48h.'),
+(80,80,'Chequeo general','Paciente sano','Prevención','Control anual.'),
+
+(81,81,'Dolor lumbar','Escoliosis leve','Fisioterapia','Postura.'),
+(82,82,'Control inmunológico','Normal','Vacunas','Seguimiento.'),
+(83,83,'Dolor manos','Artritis reumatoide','DMARDs','Reumatología.'),
+(84,84,'Evaluación cognitiva','Deterioro leve','Estimulación','Seguimiento.'),
+(85,85,'Ojo irritado','Blefaritis','Higiene palpebral','Gotas.'),
+
+(86,86,'Control lípidos','Hipercolesterolemia','Estatinas','Dieta.'),
+(87,87,'Dolor torácico','Angina estable','Nitratos','Cardiología.'),
+(88,88,'Control peso','Sobrepeso','Plan alimenticio','Actividad física.'),
+(89,89,'Dolor dental niño','Caries','Tratamiento dental','Higiene.'),
+(90,90,'Revisión anual','Salud estable','Prevención','Control.'),
+
+(91,91,'Dolor talón','Espolón calcáneo','Fisioterapia','Plantillas.'),
+(92,92,'Control epilepsia','Epilepsia controlada','Ajuste medicación','EEG.'),
+(93,93,'Dolor pélvico','Quiste ovárico','Observación','Ecografía.'),
+(94,94,'Asma pediátrica','Asma controlada','Inhalador','Seguimiento.'),
+(95,95,'Lesión muscular','Desgarro leve','Reposo','Fisioterapia.'),
+
+(96,96,'Arritmia','Arritmia benigna','Observación','Holter.'),
+(97,97,'Dolor lumbar','Ciática','Analgésicos','Fisioterapia.'),
+(98,98,'Post cirugía','Evolución normal','Curaciones','Alta médica.'),
+(99,99,'Dolor crónico','Fibromialgia','Manejo integral','Seguimiento.'),
+(100,100,'Chequeo integral','Paciente sano','Prevención','Control anual.');
+
+
+
+-- ******************************************************
+-- 6. INSERTS para Rochoa.pagos (100 Registros)
+-- ******************************************************
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (1, 1, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (2, 2, 75.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (3, 3, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (4, 4, 30.00, 'TARJETA'); -- Pago de penalidad por cancelación
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (5, 5, 80.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (6, 6, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (7, 7, 70.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (8, 8, 50.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (9, 9, 70.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (10, 10, 85.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (11, 11, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (12, 12, 75.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (13, 13, 30.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (14, 14, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (15, 15, 80.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (16, 16, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (17, 17, 70.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (18, 18, 30.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (19, 19, 70.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (20, 20, 85.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (21, 21, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (22, 22, 75.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (23, 23, 30.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (24, 24, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (25, 25, 80.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (26, 26, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (27, 27, 70.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (28, 28, 30.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (29, 29, 70.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (30, 30, 85.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (31, 31, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (32, 32, 75.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (33, 33, 30.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (34, 34, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (35, 35, 80.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (36, 36, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (37, 37, 70.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (38, 38, 30.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (39, 39, 70.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (40, 40, 85.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (41, 41, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (42, 42, 75.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (43, 43, 30.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (44, 44, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (45, 45, 80.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (46, 46, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (47, 47, 70.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (48, 48, 30.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (49, 49, 70.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (50, 50, 85.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (51, 51, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (52, 52, 75.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (53, 53, 30.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (54, 54, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (55, 55, 80.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (56, 56, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (57, 57, 70.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (58, 58, 30.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (59, 59, 70.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (60, 60, 85.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (61, 61, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (62, 62, 75.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (63, 63, 30.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (64, 64, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (65, 65, 80.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (66, 66, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (67, 67, 70.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (68, 68, 30.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (69, 69, 70.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (70, 70, 85.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (71, 71, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (72, 72, 75.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (73, 73, 30.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (74, 74, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (75, 75, 80.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (76, 76, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (77, 77, 70.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (78, 78, 30.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (79, 79, 70.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (80, 80, 85.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (81, 81, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (82, 82, 75.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (83, 83, 30.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (84, 84, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (85, 85, 80.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (86, 86, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (87, 87, 70.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (88, 88, 30.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (89, 89, 70.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (90, 90, 85.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (91, 91, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (92, 92, 75.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (93, 93, 30.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (94, 94, 60.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (95, 95, 80.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (96, 96, 60.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (97, 97, 70.00, 'TARJETA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (98, 98, 30.00, 'EFECTIVO');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (99, 99, 70.00, 'TRANSFERENCIA');
+INSERT INTO Rochoa.pagos (id_pago, id_cita, monto, metodo_pago) VALUES (100, 100, 85.00, 'EFECTIVO');
