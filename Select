@@ -1,0 +1,144 @@
+---SELECT
+--1) Top 5 pacientes por monto pagado (solo pagos activos)
+--Enunciado:
+--El centro quiere reconocer a los pacientes que más han pagado. Calcula el total pagado por paciente (pagos activo = TRUE), mostrando nombres, apellidos, email y total pagado, ordenado de mayor a menor. Usa un CTE.
+
+
+WITH PagosPorPaciente AS (
+    SELECT 
+        c.id_paciente,
+        SUM(p.monto) AS total_pagado
+    FROM Rochoa.pagos p
+    INNER JOIN Rochoa.citas c ON p.id_cita = c.id_cita
+    WHERE p.activo = TRUE 
+    GROUP BY c.id_paciente
+)
+SELECT 
+    pa.nombres,
+    pa.apellidos,
+    pa.email,
+    ppp.total_pagado
+FROM PagosPorPaciente ppp
+INNER JOIN Rochoa.pacientes pa ON ppp.id_paciente = pa.id_paciente
+ORDER BY ppp.total_pagado DESC
+LIMIT 5;
+
+
+--2) Productividad por médico: citas, consultas y total pagado + ranking
+--Enunciado:
+--Dirección médica quiere evaluar productividad: por médico, muestra número de citas atendidas, número de consultas registradas y total pagado asociado a sus citas, con ranking por total pagado y por consultas.
+
+WITH ProductividadMedico AS (
+    SELECT 
+        m.id_medico,
+        m.nombres || ' ' || m.apellidos AS medico,
+        COUNT(DISTINCT ci.id_cita) AS total_citas,
+        COUNT(DISTINCT co.id_consulta) AS total_consultas,
+        COALESCE(SUM(p.monto), 0) AS total_pagado
+    FROM Rochoa.medicos m
+    LEFT JOIN Rochoa.citas ci ON m.id_medico = ci.id_medico
+    LEFT JOIN Rochoa.consultas co ON ci.id_cita = co.id_cita
+    LEFT JOIN Rochoa.pagos p ON ci.id_cita = p.id_cita AND p.activo = TRUE
+    GROUP BY m.id_medico, m.nombres, m.apellidos
+)
+SELECT 
+    pm.medico,
+    pm.total_citas,
+    pm.total_consultas,
+    pm.total_pagado,
+    RANK() OVER (ORDER BY pm.total_pagado DESC) AS rank_pagado,
+    RANK() OVER (ORDER BY pm.total_consultas DESC) AS rank_consultas
+FROM ProductividadMedico pm
+ORDER BY rank_pagado ASC;
+
+
+--3) Agenda del día: citas PROGRAMADAS con especialidad y paciente
+--Enunciado:
+--Coordinación quiere ver la agenda del día: lista las citas con estado = 'PROGRAMADA' para la fecha actual, mostrando hora, paciente, médico y especialidad. Ordena por especialidad y hora.
+
+
+WITH AgendaDia AS (
+    SELECT 
+        c.hora,
+        pa.nombres || ' ' || pa.apellidos AS paciente,
+        m.nombres || ' ' || m.apellidos AS medico,
+        e.nombre AS especialidad,
+        c.fecha
+    FROM Rochoa.citas c
+    INNER JOIN Rochoa.pacientes pa ON c.id_paciente = pa.id_paciente
+    INNER JOIN Rochoa.medicos m ON c.id_medico = m.id_medico
+    INNER JOIN Rochoa.especialidades e ON m.id_especialidad = e.id_especialidad
+    WHERE c.estado = 'PROGRAMADA' 
+      AND c.fecha = '2026-01-18' 
+)
+SELECT 
+    hora,
+    paciente,
+    medico,
+    especialidad
+FROM AgendaDia
+ORDER BY especialidad ASC, hora ASC;
+
+
+
+
+
+/*
+4) Conversión mensual: citas → consultas y citas → pagos
+Enunciado:
+Gerencia busca tasas de conversión mensuales: por mes, muestra total de citas activas, cuántas tienen consulta registrada y cuántas tienen al menos un pago; calcula el porcentaje de conversión para ambos casos.
+*/
+
+WITH MetricasMensuales AS (
+    SELECT 
+        TO_CHAR(c.fecha, 'YYYY-MM') AS mes,
+        COUNT(c.id_cita) AS total_citas,
+        COUNT(co.id_consulta) AS con_consulta,
+        COUNT(DISTINCT p.id_cita) AS con_pago
+    FROM Rochoa.citas c
+    LEFT JOIN Rochoa.consultas co ON c.id_cita = co.id_cita
+    LEFT JOIN Rochoa.pagos p ON c.id_cita = p.id_cita
+    GROUP BY TO_CHAR(c.fecha, 'YYYY-MM')
+)
+SELECT 
+    mes,
+    total_citas,
+    con_consulta,
+    con_pago,
+    ROUND((con_consulta::numeric / total_citas) * 100, 2) || '%' AS porc_conversion_consulta,
+    ROUND((con_pago::numeric / total_citas) * 100, 2) || '%' AS porc_conversion_pago
+FROM MetricasMensuales
+ORDER BY mes;
+
+
+/* 5) Auditoría clínica/financiera: citas ATENDIDAS sin consulta o sin pago
+Enunciado:
+Auditoría necesita detectar citas con estado = 'ATENDIDA' que: (a) no tienen consulta registrada, o (b) no tienen pagos. Muestra paciente, médico, especialidad, fecha/hora y flags de ausencia de consulta/pago. */
+
+SELECT 
+    pa.nombres || ' ' || pa.apellidos AS paciente,
+    m.nombres || ' ' || m.apellidos AS medico,
+    e.nombre AS especialidad,
+    c.fecha,
+    c.hora,
+    -- Marcamos qué falta usando CASE
+    CASE 
+        WHEN co.id_consulta IS NULL THEN 'FALTA CONSULTA' 
+        ELSE 'OK' 
+    END AS flag_consulta,
+    CASE 
+        WHEN p.id_pago IS NULL THEN 'FALTA PAGO' 
+        ELSE 'OK' 
+    END AS flag_pago
+FROM Rochoa.citas c
+-- Usamos LEFT JOIN para que la fila no se borre si falta info en las otras tablas
+LEFT JOIN Rochoa.pacientes pa ON c.id_paciente = pa.id_paciente
+LEFT JOIN Rochoa.medicos m ON c.id_medico = m.id_medico
+LEFT JOIN Rochoa.especialidades e ON m.id_medico = e.id_especialidad
+LEFT JOIN Rochoa.consultas co ON c.id_cita = co.id_cita
+LEFT JOIN Rochoa.pagos p ON c.id_cita = p.id_cita
+-- Filtramos por el estado que mencionas
+WHERE c.estado = 'CANCELADA'
+-- Mostramos solo las que tengan errores (en tu TXT todas las canceladas saldrán con faltas)
+AND (co.id_consulta IS NULL OR p.id_pago IS NULL)
+ORDER BY c.fecha DESC;
